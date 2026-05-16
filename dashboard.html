@@ -1,0 +1,25 @@
+{
+  "name": "supermarket-pos",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "sqlite3": "^5.1.0",
+    "pdfkit": "^0.14.0"
+  },
+  "build": {
+    "appId": "com.supermarket.pos",
+    "productName": "Supermarket POS",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
